@@ -1,0 +1,275 @@
+.pdr-wrap {
+	max-width: 1400px;
+}
+
+.pdr-wrap .description {
+	margin-bottom: 20px;
+}
+
+.pdr-toolbar {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 8px;
+	padding: 16px 18px;
+	margin: 0 0 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.pdr-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	align-items: end;
+}
+
+.pdr-filters label {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 180px;
+}
+
+.pdr-filters label span {
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.pdr-filters select,
+.pdr-filters input[type="search"] {
+	min-width: 220px;
+}
+
+.pdr-summary {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.pdr-stat {
+	background: linear-gradient(180deg, #fff 0%, #f6f7f7 100%);
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 16px 18px;
+}
+
+.pdr-stat-label {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #646970;
+	margin-bottom: 6px;
+}
+
+.pdr-stat strong {
+	font-size: 28px;
+	line-height: 1.1;
+	color: #1d2327;
+}
+
+.pdr-empty-state {
+	background: #fff;
+	border: 1px dashed #c3c4c7;
+	border-radius: 10px;
+	padding: 48px 24px;
+	text-align: center;
+}
+
+.pdr-empty-state--success {
+	border-color: #68de7c;
+	background: #f0fff4;
+}
+
+.pdr-empty-icon {
+	font-size: 42px;
+	width: 42px;
+	height: 42px;
+	color: #646970;
+	margin: 0 auto 12px;
+}
+
+.pdr-empty-state--success .pdr-empty-icon {
+	color: #008a20;
+}
+
+.pdr-results {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.pdr-group {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.pdr-group-toggle {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 14px 18px;
+	border: 0;
+	background: #f6f7f7;
+	cursor: pointer;
+	text-align: left;
+}
+
+.pdr-group-toggle:hover,
+.pdr-group-toggle:focus {
+	background: #eef0f1;
+}
+
+.pdr-group-title {
+	font-size: 15px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.pdr-group.is-collapsed .pdr-group-body {
+	display: none;
+}
+
+.pdr-group.is-collapsed .pdr-group-toggle .dashicons {
+	transform: rotate(180deg);
+}
+
+.pdr-group-body {
+	padding: 0;
+	overflow-x: auto;
+}
+
+.pdr-table {
+	margin: 0;
+	border: 0;
+}
+
+.pdr-table th,
+.pdr-table td {
+	vertical-align: top;
+}
+
+.pdr-table code {
+	background: #f0f0f1;
+	padding: 2px 6px;
+	border-radius: 4px;
+}
+
+.pdr-meta-line {
+	margin-top: 4px;
+	font-size: 12px;
+	color: #646970;
+}
+
+.pdr-badge,
+.pdr-chip {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: #eef3ff;
+	color: #1d4ed8;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.pdr-chip {
+	margin: 0 4px 4px 0;
+	background: #f0f0f1;
+	color: #1d2327;
+}
+
+.pdr-status {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 999px;
+	font-size: 12px;
+	background: #f0f0f1;
+}
+
+.pdr-status--publish {
+	background: #d5f5e3;
+	color: #0f5132;
+}
+
+.pdr-status--draft {
+	background: #fff3cd;
+	color: #664d03;
+}
+
+.pdr-status--pending,
+.pdr-status--future {
+	background: #dbeafe;
+	color: #1e40af;
+}
+
+.pdr-status--private {
+	background: #ede9fe;
+	color: #5b21b6;
+}
+
+.pdr-tax-group {
+	margin-bottom: 6px;
+}
+
+.pdr-tax-group:last-child {
+	margin-bottom: 0;
+}
+
+.pdr-muted {
+	color: #646970;
+	font-style: italic;
+}
+
+.pdr-actions {
+	white-space: nowrap;
+}
+
+.pdr-actions .button {
+	margin-right: 6px;
+	margin-bottom: 4px;
+}
+
+@media (max-width: 960px) {
+	.pdr-filters {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.pdr-filters label,
+	.pdr-filters select,
+	.pdr-filters input[type="search"] {
+		width: 100%;
+		min-width: 0;
+	}
+
+	.pdr-table thead {
+		display: none;
+	}
+
+	.pdr-table tr {
+		display: block;
+		border-bottom: 1px solid #dcdcde;
+		padding: 12px 16px;
+	}
+
+	.pdr-table td {
+		display: block;
+		border: 0;
+		padding: 6px 0;
+	}
+
+	.pdr-table td::before {
+		content: attr(data-label);
+		display: block;
+		font-size: 11px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #646970;
+		margin-bottom: 4px;
+	}
+}
